@@ -1,0 +1,47 @@
+<section class="py-5" id="else">
+  <div class="container px-4 px-lg-5">
+    <ul class="nav nav-pills justify-content-center nav-fill pb-3 mb-3" id="pills-tab" role="tablist">
+      {% for item in site.data.else[page.lang] %}
+      <li class="nav-item" role="presentation">
+        <button class="nav-link {% if item.id == 'education' %}active{% endif %}" id="pills-{{ item.id }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ item.id }}" type="button" role="tab" aria-controls="pills-{{ item.id }}" aria-selected="{% if button.id == 'education' %}true{% else%}false{% endif %}">{{ item.label | capetalize }}</button>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      {% for item in site.data.else[page.lang] %}
+      <div class="tab-pane fade {% if item.id == 'education' %}show active{% endif %}" id="pills-{{ item.id }}" role="tabpanel" aria-labelledby="nav-{{ item.id }}-tab">
+        {% for obj in item.item %}
+        <!-- Featured Project Row-->
+        <div class="card mb-4 p-3">
+          <div class="container">
+            <div class="row justify-content-between">
+              <h4 class="fw-bold col-lg-6 mb-1">{{ obj.name }}</h4>
+              <div class="col-lg-5">
+                <div class="d-flex justify-content-lg-end">
+                  <p class="text-muted mb-3"><i class="fas fa-map-marked-alt" aria-hidden="true"></i> {{ obj.location }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row justify-content-between">
+              <p class="fw-bold col-lg-6 mb-1">{{ obj.title }}</p>
+              <div class="col-lg-5">
+                <div class="d-flex justify-content-lg-end">
+                  <p class="text-muted mb-3"><i class="far fa-clock" aria-hidden="true"></i> {{ obj.period }}</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% for content in obj.description %}
+          <p class="mb-0">{{ content.block }}</p>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+en:
+  - id: address
+    name: Address
+    content: Lausanne, Switzerland
+  - id: email
+    name: Email
+    content: jubinlc@gmail.com
+
+fr:
+  - id: address 
+    name: Adresse
+    content: Lausanne, Suisse
+  - id: email
+    name: Email
+    content: jubinlc@gmail.com

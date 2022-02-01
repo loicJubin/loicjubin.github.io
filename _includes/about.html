@@ -1,11 +1,13 @@
-<section class="about-section text-center" id="about">
+<section class="about-section pb-4" id="about">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-white mb-4">About Me</h2>
-                <p class="text-white-50">Hello world !</p>
-            </div>
+          <h2 class="text-white text-center mb-4 w-100">{{ site.data.about[page.lang].title }}</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+          <div>
+            <img src="/assets/images/my-profil-picture.png" width="271" height="271">
+          </div>
+          <p class="text-white col-sm-9 mx-3">{{ site.data.about['en'].content }}</p>
         </div>
-        <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+      </div>
     </div>
 </section>

@@ -1,0 +1,72 @@
+en:
+  - logo_svg: svg/faa-logo.svg
+    title: Fondation Asile des aveugles
+    location: Lausanne, Switzerland
+    job:
+      - title: Data Scientist
+        period: 02/2020 - Today
+        description:
+          - block: "Working on a project that fallow-up the work done of my thesis:"
+          - list:
+            - bullet: Development of an application based on Django, Docker and Bootstrap
+            - bullet: Witing unit testing with Django unittest and Selenium
+            - bullet: Creation of bot to bath process the denial claims inside our billing software
+          - block: "Miscellaneous:"
+          - list:
+            - bullet: Creation of web crawler BeautifullSoup/Selenium for operational need
+            - bullet: Spontaneous help for other projects that need technical expertise about data and automation
+
+      - title: Internship - Data Analyst
+        period: 02/2020 - 08/2020
+        description:
+          - block: "Thesis on “Learning Quality Control Measures to Decrease Bill Errors in a Hospital Environment”, best grade (6):"
+          - list:
+            - bullet: "Analysing the claim denials from the insurances to improve their treatments and to reduce their occurrences.
+              Designed a new ecosystem build around dockerized applications"
+            - bullet: Witing unit testing with Django unittest and Selenium
+            - bullet: Creation of bot to bath process the denial claims inside our billing software
+          - block: "Project Hospitalisation:"
+          - list:
+            - bullet: "Analysing a service inside the hospital to improve their efficiency.
+              Collaborations with people from the medical teams to the administrative one. The recommendations of the report were implemented"
+            - bullet: Data wrangling and analysing with Pandas/Seaborn/Matplolib
+
+      - title: Student job – Programmer
+        period: 06/2019 - 01/2020
+        description:
+          - block: "Help for the transition of a new system of patient identification :"
+          - list:
+            - bullet: Creation of bot with PyAutoGUI to extract/modify data of the medical devices
+            - bullet: Data wrangling with Pandas library and data visualisation with Seaborn/Matplotlib
+          - block: "Project Hospitalisation:"
+          - list:
+            - bullet: "Analysing a service inside the hospital to improve their efficiency.
+              Collaborations with people from the medical teams to the administrative one. The recommendations of the report were implemented"
+            - bullet: Data wrangling and analysing with Pandas/Seaborn/Matplolib
+
+  - logo_svg: svg/oddo-logo.svg
+    title: ODDO BHF Asset Management
+    location: Geneva, Switzerland
+    job:
+      - title: Commercial assistant
+        period: 09/2018 - 02/2019
+        description:
+          - block: "Internship during my studies. My tasks were the following:"
+          - list:
+            - bullet: "Client services: Answering the questions and attending to the needs of the clients, organising meetings with fund managers"
+            - bullet: "Billing: Collecting the client’s attestations and verifying them for the retrocessions."
+            - bullet: 'Organising events: for ex. organised “Strategy of Investment” for 60 people in “Hôtel Beau-Rivage”'
+            - bullet: "Sales assistant: time-table management for two sales managers, follow-up of 30 clients in four weeks"
+            - bullet: "Market studies: Analysing ODDO BHF’s competitors’ funds"
+            - bullet: "Market studies: Coding in VBA to automatize calculations and documents"
+
+  - logo_image: /assets/images/lt-logo.png
+    title: Lycée Technique Biel-Bienne
+    location: Biel-Bienne, Switzerland
+    job:
+      - title: Micromechanic
+        period: 09/2018 - 02/2019
+        description:
+          - block: "Internship during my studies. My tasks were the following:"
+          - list:
+            - bullet: "Client services: Answering the questions and attending to the needs of the clients, organising meetings with fund managers"

@@ -1,0 +1,72 @@
+en:
+  - column:
+    title: Languages
+    items:
+      - title: French
+        value: 100
+        human-value: Mother Language
+      - title: English
+        value: 85
+        human-value: C1
+      - title: German
+        value: 40
+        human-value: B1
+
+  - column:
+    title: Informatics
+    items:
+      - title: Python
+        value: 85
+        human-value: 85%
+      - title: Django
+        value: 85
+        human-value: 85%
+      - title: Pandas
+        value: 60
+        human-value: 60%
+
+  - column:
+    title: Office Suite
+    items:
+      - title: Word
+        value: 90
+        human-value: 90%
+      - title: Excel
+        value: 85
+        human-value: 85%
+fr:
+  - column:
+    title: Languages
+    items:
+      - title: French
+        value: 100
+        human-value: Mother Language
+      - title: English
+        value: 85
+        human-value: C1
+      - title: German
+        value: 40
+        human-value: B1
+
+  - column:
+    title: Informatiques
+    items:
+      - title: Python
+        value: 85
+        human-value: 85%
+      - title: Django
+        value: 85
+        human-value: 85%
+      - title: Pandas
+        value: 60
+        human-value: 60%
+
+  - column:
+    title: Suite Office
+    items:
+      - title: Word
+        value: 90
+        human-value: 90%
+      - title: Excel
+        value: 85
+        human-value: 85%

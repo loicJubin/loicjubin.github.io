@@ -1,11 +1,56 @@
-<section class="experience-section text-center" id="experience">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="tmb-4">Experience</h2>
-                <p class="">Hello world !</p>
+<section class="experience-section bg-light py-5" id="experience">
+  <div class="container py-3 px-4 px-lg-5">
+
+    <h2 class="tmb-4 text-center mb-4">Experience</h2>
+
+    <div class="zigzag-timeline-begin"></div>
+
+    {% for society in site.data.experience[page.lang] %}
+    <div class="zigzag-timeline__item py-3">
+      <!-- Milestone -->
+      <div class="zigzag-timeline__milestone"></div>
+      <div class="text-center mx-auto col-lg-5 py-4">
+        {% if society.logo_svg %}{% include {{ society.logo_svg }} %}{% endif %}
+        {% if society.logo_image %}<img src="{{ society.logo_image }}" style="width: 60%">{% endif %}
+      </div>
+      <!-- Content -->
+      <div class="mx-3 pb-3">
+        <div class="container">
+          <div class="row justify-content-between">
+            <h4 class="fw-bold col-lg-6 mb-1">{{ society.title }}</h4>
+            <div class="col-lg-5">
+              <div class="d-flex justify-content-lg-end">
+                <p class="text-muted mb-3"><i class="fas fa-map-marked-alt" aria-hidden="true"></i>  {{ society.location }}</p>
+              </div>
             </div>
+          </div>
+
+          {% for job in society.job %}
+          <div class="row justify-content-between">
+            <p class="fw-bold col-lg-6 mb-1">{{ job.title }}</p>
+            <div class="col-lg-5">
+              <div class="d-flex justify-content-lg-end">
+                <p class="text-muted mb-3"><i class="far fa-clock" aria-hidden="true"></i> {{ job.period }}</span></p>
+              </div>
+            </div>
+          </div>
+
+        {% for item in job.description %}
+        <p class="mb-0">{% if item.block %} {{ item.block }} {% endif %}
+          {% if item.list %}
+          <ul>
+            {% for bullet in item.list %}
+            <li>{{ bullet.bullet }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </p>
+        {% endfor %}
+        {% endfor %}
         </div>
-        <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+      </div>
     </div>
+    {% endfor %}
+
+  </div>
 </section>

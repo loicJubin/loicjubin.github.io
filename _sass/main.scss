@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*! Modified by Loïc Jubin */
 /*!
 * Start Bootstrap - Grayscale v7.0.4 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2021 Start Bootstrap
@@ -10,6 +11,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11562,7 +11564,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/assets/images/star.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11697,4 +11699,71 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+/* From https://csslayout.io/zigzag-timeline/ */
+.zigzag-timeline__item {
+                        /* Used to position the milestone */
+                        position: relative;
+
+                        /* Border */
+                        border-bottom: 3px solid #64a19d;
+
+                        /* Take full width */
+                        width: 100%;
+                    }
+
+.zigzag-timeline__milestone {
+    /* Absolute position */
+    position: absolute;
+    top: 50%;
+
+    /* Circle it */
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+
+    /* Misc */
+    background: #64a19d;
+}
+
+/* Styles for odd items */
+.zigzag-timeline__item:nth-child(2n + 1) {
+    border-left: 3px solid #64a19d;
+}
+.zigzag-timeline__item:nth-child(2n + 1) .zigzag-timeline__milestone {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.zigzag-timeline-begin:nth-child(2n + 1) {
+  /* Border */
+  height: 2rem;
+  width: 50%;
+  border-bottom: 3px solid #64a19d; 
+  border-left: 3px solid #64a19d;
+}
+
+/* Styles for even items */
+.zigzag-timeline__item:nth-child(2n) {
+    border-right: 3px solid #64a19d;
+}
+.zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+.zigzag-timeline-begin:nth-child(2n) {
+  /* Border */
+  height: 2rem;
+  width: 50%;
+  border-bottom: 3px solid #64a19d; 
+  border-right: 3px solid #64a19d;
+}
+
+#else li .active {
+  background-color: black;
+  color: white;
+}
+
+#else li button:not(.active) {
+  color: black;
 }

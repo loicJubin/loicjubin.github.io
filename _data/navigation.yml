@@ -1,10 +1,33 @@
-- name: About
-  link: "#about"
-- name: Experience
-  link: "#experience"
-- name: Education
-  link: "#education"
-- name: Skills
-  link: "#skills"
-- name: Contact
-  link: "#contact"
+en:
+  - title: Welcome to my site !
+  - nav:
+    - name: About
+      link: "#about"
+    - name: Experience
+      link: "#experience"
+    - name: Else
+      link: "#else"
+    - name: Skills
+      link: "#skills"
+    - name: Contact
+      link: "#contact"
+      #- name: Project
+      #- link: "#project"
+
+
+
+fr:
+  - title: Bienvenue !
+  - nav:
+    - name: Concernant
+      link: "#about"
+    - name: Experiences
+      link: "#experience"
+    - name: Autres
+      link: "#else"
+    - name: Compétences
+      link: "#skills"
+    - name: Contact
+      link: "#contact"
+      #- name: Projets
+      #- link: "#project"
