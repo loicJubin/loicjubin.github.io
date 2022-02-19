@@ -19,7 +19,7 @@
               <h4 class="fw-bold col-lg-6 mb-1">{{ obj.name }}</h4>
               <div class="col-lg-5">
                 <div class="d-flex justify-content-lg-end">
-                  <p class="text-muted mb-3"><i class="fas fa-map-marked-alt" aria-hidden="true"></i> {{ obj.location }}</p>
+                  <p class="text-muted mb-3"><i class="fa fa-map-location-dot" aria-hidden="true"></i> {{ obj.location }}</p>
                 </div>
               </div>
             </div>
@@ -30,14 +30,25 @@
               <p class="fw-bold col-lg-6 mb-1">{{ obj.title }}</p>
               <div class="col-lg-5">
                 <div class="d-flex justify-content-lg-end">
-                  <p class="text-muted mb-3"><i class="far fa-clock" aria-hidden="true"></i> {{ obj.period }}</span></p>
+                  <p class="text-muted mb-3"><i class="fa fa-clock" aria-hidden="true"></i> {{ obj.period }}</span></p>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="container">
           {% for content in obj.description %}
-          <p class="mb-0">{{ content.block }}</p>
+            <p class="mb-0">{% if content.block %} {{ content.block }} {% endif %}
+              {% if content.list %}
+              <ul class="px-3">
+                {% for bullet in content.list %}
+                <li>{{ bullet.bullet }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </p>
           {% endfor %}
+          </div>
         </div>
         {% endfor %}
       </div>

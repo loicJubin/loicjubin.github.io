@@ -1,22 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container px-4 px-lg-5">
     <a class="navbar-brand" href="#page-top">{{ site.data.navigation[page.lang][0].title }}</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             {% for item in site.data.navigation[page.lang][1].nav %}
             <li class="nav-item"><a class="nav-link" href="{{ item.link }}">{{ item.name }}</a></li>
             {% endfor %}
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{ page.lang | upcase }}
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               {% for item in site.data.languages[page.lang] %}
-              <li><a class="dropdown-item disabled" href="{{ item.link }}" aria-disabled="true" >{{ item.lang }}</a></li>
+              <li><a class="dropdown-item" href="{{ item.link }}">{{ item.lang }}</a></li>
               {% endfor %}
             </ul>
           </li>

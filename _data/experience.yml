@@ -1,72 +1,173 @@
 en:
-  - logo_svg: svg/faa-logo.svg
-    title: Fondation Asile des aveugles
-    location: Lausanne, Switzerland
-    job:
-      - title: Data Scientist
-        period: 02/2020 - Today
-        description:
-          - block: "Working on a project that fallow-up the work done of my thesis:"
-          - list:
-            - bullet: Development of an application based on Django, Docker and Bootstrap
-            - bullet: Witing unit testing with Django unittest and Selenium
-            - bullet: Creation of bot to bath process the denial claims inside our billing software
-          - block: "Miscellaneous:"
-          - list:
-            - bullet: Creation of web crawler BeautifullSoup/Selenium for operational need
-            - bullet: Spontaneous help for other projects that need technical expertise about data and automation
+  section: 'Experience'
+  content:
+    - logo_svg: svg/faa-logo.svg
+      title: Fondation Asile des aveugles
+      location: Lausanne, Switzerland
+      job:
+        - title: Data Scientist
+          period: 02/2020 - Today
+          description:
+            - block: "Working on a project that fallow-up the work done of my thesis:"
+            - list:
+              - bullet: "Development of an application based on Django, Docker and Bootstrap to improve the management of claim denials and reduce their occurrences.
+                Detected 1.2k errors before billing and 3.5k claims were managed via the system."
+              - bullet: Witing unit testing with Django unittest and Selenium
+              - bullet: Creation of bot to bath process the denial claims inside our billing software which have process 1k bills.
+            - block: "Miscellaneous:"
+            - list:
+              - bullet: Creation of web crawler BeautifullSoup/Selenium for operational need (market studies)
+              - bullet: Spontaneous help for projects to imporove data quality and the operational performance metrics
 
-      - title: Internship - Data Analyst
-        period: 02/2020 - 08/2020
-        description:
-          - block: "Thesis on “Learning Quality Control Measures to Decrease Bill Errors in a Hospital Environment”, best grade (6):"
-          - list:
-            - bullet: "Analysing the claim denials from the insurances to improve their treatments and to reduce their occurrences.
-              Designed a new ecosystem build around dockerized applications"
-            - bullet: Witing unit testing with Django unittest and Selenium
-            - bullet: Creation of bot to bath process the denial claims inside our billing software
-          - block: "Project Hospitalisation:"
-          - list:
-            - bullet: "Analysing a service inside the hospital to improve their efficiency.
-              Collaborations with people from the medical teams to the administrative one. The recommendations of the report were implemented"
-            - bullet: Data wrangling and analysing with Pandas/Seaborn/Matplolib
+        - title: Internship - Data Analyst
+          period: 02/2020 - 08/2020
+          description:
+            - block: "Thesis on “Learning Quality Control Measures to Decrease Bill Errors in a Hospital Environment”, grade 6:"
+            - list:
+              - bullet: "Analysing the claim denials from the insurances to improve their treatments and to reduce their occurrences.
+                A design of an ecosystem build around dockerized application was created."
+              - bullet: Direct results of 2.5k denial claims were treated in batch. 96% were paid the next following 3 months.
+            - block: "Project Hospitalisation:"
+            - list:
+              - bullet: "Analysing a service inside the hospital to improve their efficiency.
+                Collaborations with people from the medical teams to the administrative one. The recommendations of the report were implemented"
+              - bullet: Data wrangling and analysing with Pandas/Seaborn/Matplolib
 
-      - title: Student job – Programmer
-        period: 06/2019 - 01/2020
-        description:
-          - block: "Help for the transition of a new system of patient identification :"
-          - list:
-            - bullet: Creation of bot with PyAutoGUI to extract/modify data of the medical devices
-            - bullet: Data wrangling with Pandas library and data visualisation with Seaborn/Matplotlib
-          - block: "Project Hospitalisation:"
-          - list:
-            - bullet: "Analysing a service inside the hospital to improve their efficiency.
-              Collaborations with people from the medical teams to the administrative one. The recommendations of the report were implemented"
-            - bullet: Data wrangling and analysing with Pandas/Seaborn/Matplolib
+        - title: Student job – Programmer
+          period: 06/2019 - 01/2020
+          description:
+            - block: "Help for the transition of a new system of patient identification :"
+            - list:
+              - bullet: Creation of bot with PyAutoGUI to extract/modify data of the medical devices. 81k records were modified.
+              - bullet: Data wrangling with Pandas library and data visualisation with Seaborn/Matplotlib
 
-  - logo_svg: svg/oddo-logo.svg
-    title: ODDO BHF Asset Management
-    location: Geneva, Switzerland
-    job:
-      - title: Commercial assistant
-        period: 09/2018 - 02/2019
-        description:
-          - block: "Internship during my studies. My tasks were the following:"
-          - list:
-            - bullet: "Client services: Answering the questions and attending to the needs of the clients, organising meetings with fund managers"
-            - bullet: "Billing: Collecting the client’s attestations and verifying them for the retrocessions."
-            - bullet: 'Organising events: for ex. organised “Strategy of Investment” for 60 people in “Hôtel Beau-Rivage”'
-            - bullet: "Sales assistant: time-table management for two sales managers, follow-up of 30 clients in four weeks"
-            - bullet: "Market studies: Analysing ODDO BHF’s competitors’ funds"
-            - bullet: "Market studies: Coding in VBA to automatize calculations and documents"
+    - logo_svg: svg/oddo-logo.svg
+      title: ODDO BHF Asset Management
+      location: Geneva, Switzerland
+      job:
+        - title: Commercial assistant
+          period: 09/2018 - 02/2019
+          description:
+            - block: "Internship during my studies. My tasks were the following:"
+            - list:
+              - bullet: "Client services: Answering the questions and attending to the needs of the clients, organising meetings with fund managers"
+              - bullet: "Billing: Collecting the client’s attestations and verifying them for the retrocessions."
+              - bullet: 'Organising events: for ex. organised “Strategy of Investment” for 60 people in “Hôtel Beau-Rivage”'
+              - bullet: "Sales assistant: time-table management for two sales managers, follow-up of 30 clients in four weeks"
+              - bullet: "Market studies: Analysing ODDO BHF’s competitors’ funds"
+              - bullet: "Market studies: Coding in VBA to automatize calculations and documents"
 
-  - logo_image: /assets/images/lt-logo.png
-    title: Lycée Technique Biel-Bienne
-    location: Biel-Bienne, Switzerland
-    job:
-      - title: Micromechanic
-        period: 09/2018 - 02/2019
-        description:
-          - block: "Internship during my studies. My tasks were the following:"
-          - list:
-            - bullet: "Client services: Answering the questions and attending to the needs of the clients, organising meetings with fund managers"
+    - logo_image: /assets/images/adecco-logo.png
+      image_width: 40%
+      title: ADECCO 
+      location: Lausanne, Switzerland
+      job:
+        - title: Agency Worker
+          period: 07/2016 - 08/2016
+          description:
+            - block: "Execution of missions like warehouseman (STEF group) or mover"
+   
+    - logo_svg: svg/swiss-confederation.svg
+      title: Swiss Army Forces
+      location: Switzerland
+      job:
+        - title: Truck Driver
+          period: 10/2013 - 08/2014
+          description:
+            - block: "Transport of dangerous materials (ADR/SDR), weapons and troops"
+
+    - logo_image: /assets/images/lt-logo.png
+      title: Lycée Technique Biel-Bienne
+      location: Biel-Bienne, Switzerland
+      job:
+        - title: Micromechanic
+          period: 09/2008 - 07/2012
+          description:
+            - block: "Apprenticeship in micro-mechanic with professional maturity"
+
+fr:
+  section: Expériences
+  content:
+    - logo_svg: svg/faa-logo.svg
+      title: Fondation Asile des aveugles
+      location: Lausanne, Suisse
+      job:
+        - title: Data Scientist
+          period: "02/2020 - Aujourd'hui"
+          description:
+            - block: "Implémentation de la thèse de master:"
+            - list:
+              - bullet: "Développement d'une application avec Django, Docker et Boostrap pour améliorer le management des refus d'assurance et de réduire leurs occurrences.
+                L'application a permis de détecter 1.2k erreurs avant facturation et 3.5k refus ont été traités via le système."
+              - bullet: "Écriture d'unité de test avec Django et Selenium"
+              - bullet: "Création de bot pour traiter en masse des refus d'assurance dans notre système de facturation. 1k refus ont été traités"
+            - block: "Autres projets:"
+            - list:
+              - bullet: Création de web crawler avec BeautifullSoup/Selenium pour des besoins opérationnels et d'étude de marché
+              - bullet: "Aide spontanée pour des projets demandant une expertise dans les données. Exploration d'indicateurs de performances."
+
+        - title: Internship - Data Analyst
+          period: 02/2020 - 08/2020
+          description:
+            - block: "Thèse sur “Learning Quality Control Measures to Decrease Bill Errors in a Hospital Environment”, note 6:"
+            - list:
+              - bullet: "Analyse des refus d'assurances afin d'améliorer leurs traitements et de réduire leurs occurrences.
+                Un modèle d'un écosystème construit autour d'applications conteneurisées a été planifié."
+              - bullet: 2.5k refus furent traités en masse à la fin de la thèse. 96% ont été payés durant les 3 mois suivants.
+            - block: "Projet Hospitalisation:"
+            - list:
+              - bullet: "Analyse d'un service hospitalier pour améliorer la gestion des lits/nuitées.
+                Collaboration avec des équipes médicales jusqu’à l’équipe purement administrative. Les recommandations du rapport furent implémentées."
+              - bullet: "Nettoyage de donnée et analyse via Pandas/Seaborn et Matplotlib"
+
+        - title: Student job – Programmeur
+          period: 06/2019 - 01/2020
+          description:
+            - block: "Aide pour faciliter une transition à un nouveau système d'identification de patient"
+            - list:
+              - bullet: Création de robot avec PyAutoGUI pour extraire et modifier des données sur des machines médicales. 81k dossiers ont été corrigés.
+              - bullet: Nettoyage de donnée avec Pandas et visualisation avec Seaborn/Matplotlib.
+
+    - logo_svg: svg/oddo-logo.svg
+      title: ODDO BHF Asset Management
+      location: Genêve, Suisse
+      job:
+        - title: Assistant commerciale
+          period: 09/2018 - 02/2019
+          description:
+            - block: "Stage durant mes études. Mes tâches principales étaient les suivantes:"
+            - list:
+              - bullet: "Service client : Répondre aux questions et besoins des clients. Organisation des rendez-vous avec les portfolios managers"
+              - bullet: "Facturation: Collecter les attestations des clients et les vérifiées pour les rétrocessions"
+              - bullet: "Organisation d’événements : par ex. organisation de 'Stratégie d’Investissement' pour 60 personnes à l’hôtel 'Hôtel Beau-Rivage'"
+              - bullet: "Assistant: gestion du planning de 2 sales managers, suivie de 30 clients en 4 semaines."
+              - bullet: "Étude de marché: Analyse de la compétition des fonds d'ODDO BHF"
+              - bullet: "Optimisation: Programation en VBA pour automatiser des calculs et des documents."
+
+    - logo_image: /assets/images/adecco-logo.png
+      image_width: 40%
+      title: ADECCO 
+      location: Lausanne, Switzerland
+      job:
+        - title: Temporaire
+          period: 07/2016 - 08/2016
+          description:
+            - block: "Exécution de missions telles que manutentionnaire (STEF Group) ou déménageurs"
+
+    - logo_svg: svg/swiss-confederation.svg
+      title: Armée Suisse
+      location: Suisse
+      job:
+        - title: Conducteur poids lourd
+          period: 10/2013 - 08/2014
+          description:
+            - block: "Gestion de transport de matières dangereuse (ADR/SDR), d'armements et transport de troupes"
+
+    - logo_image: /assets/images/lt-logo.png
+      title: Lycée Technique Biel-Bienne
+      location: Biel-Bienne, Suisse
+      job:
+        - title: Micromécanicien
+          period: 09/2008 - 07/2012
+          description:
+            - block: "Apprentissage de micromécanicien avec certificat de maturité intégrée"

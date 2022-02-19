@@ -6,27 +6,79 @@ en:
         location: Lausanne, Switzerland
         title: M.Sc. in Finance specialised in Fintech
         period: 09/2017-09/2020
-        description:
-          - block: "<ul>09/2018-02/2019: M.Sc. in Finance specialised in Fintech (suspended during my full-time internship)</ul>"
+
       - name: HEC Lausanne, University of Lausanne
         location: Lausanne, Switzerland
         title: B.Sc. in Management
         period: 09/2014-09/2017
         description:
-          - block: "<ul>09/2016-06/2017: Selected for an exchange year at the University of Cardiff, Wales</ul>"
+          - block: "09/2016-06/2017: Exchange year at the University of Cardiff, Wales"
+      - name: Passerelle BEJUNE
+        location: Biel/Bienne, Switzerland
+        title: '"Examen complémentaire passerelle"'
+        period: 09/2012 - 07/2013
+        description:
+          - block: "Compulsory bridge from apprentiship to university"
 
   - id: association
     label: Association
     item:
-      - name: TEST, University of Lausanne
-        location: Lausanne, Switzerland
-        title: M.Sc. in Finance specialised in Fintech
-        period: 09/2017-09/2020
+      - name: Erasmus Student Network (ESN)
+        location: Cardiff, Wales 
+        title: Event Manager
+        period: 01/2017-06/2017
         description:
-          - block: "<ul>09/2018-02/2019: M.Sc. in Finance specialised in Fintech (suspended during my full-time internship)</ul>"
-      - name: TEST, University of Lausanne
+          - list:
+            - bullet: "Arranged an event for 50 UK students to explains the goals and purpose of the European Union"
+
+      - name: OIKOS, University of Lausanne
         location: Lausanne, Switzerland
-        title: B.Sc. in Management
+        title: Member of the finance department 
+        period: 09/2015-06/2016
+        description:
+          - list:
+            - bullet: "Managed the accounting of the student union (CHF 10k), successfully finished with a result of CHF 11k."
+            - bullet: "Organised three conferences, one student talk, one movie projection and one walk for the climate (around 600 participants)
+            during the 'COP21' at the UNIL/EPFL"
+
+fr:
+  - id: education
+    label: Éducation
+    item:
+      - name: HEC Lausanne, Université de Lausanne
+        location: Lausanne, Suisse
+        title: M.Sc. en Finance spésialistaion en Fintech
+        period: 09/2017-09/2020
+
+      - name: HEC Lausanne, Université de Lausanne
+        location: Lausanne, Suisse
+        title: B.Sc. en Management
         period: 09/2014-09/2017
         description:
-          - block: "<ul>09/2016-06/2017: Selected for an exchange year at the University of Cardiff, Wales</ul>"
+          - block: "09/2016-06/2017: Échange linguistique à l'université de Cardiff, Pays de Galles"
+      - name: Passerelle BEJUNE
+        location: Biel/Bienne, Suisse
+        title: "Examen complémentaire passerelle"
+        period: 09/2012 - 07/2013
+        description:
+          - block: "Passerelle obligatoire pour apprentissage avec maturité professionnelle à l’université"
+
+  - id: association
+    label: Association
+    item:
+      - name: Erasmus Student Network (ESN)
+        location: Cardiff, Pays de Galles
+        title: Orginisateur évenmentiels
+        period: 01/2017-06/2017
+        description:
+          - list:
+            - bullet: "Organisation d'un événement regroupant 50 participants ayant pour buts d'expliquer le rôle de l'Union Européene."
+
+      - name: OIKOS, University of Lausanne
+        location: Lausanne, Suisse
+        title: Member of the finance department 
+        period: 09/2015-06/2016
+        description:
+          - list:
+            - bullet: "Gestion de la comptabilité de l'association (10K CHF). Clôture avec un résultat positif à 11k CHF."
+            - bullet: "Organisation de trois conférences, un débat étudiant une projection et une marche pour le climat (environ 600 participants) durant la 'COP21' à l'UNIL/EPFL."

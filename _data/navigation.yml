@@ -21,7 +21,7 @@ fr:
   - nav:
     - name: Concernant
       link: "#about"
-    - name: Experiences
+    - name: Expériences
       link: "#experience"
     - name: Autres
       link: "#else"

@@ -1,17 +1,17 @@
 <section class="experience-section bg-light py-5" id="experience">
   <div class="container py-3 px-4 px-lg-5">
 
-    <h2 class="tmb-4 text-center mb-4">Experience</h2>
+    <h2 class="tmb-4 text-center mb-4">{{ site.data.experience[page.lang].section }}</h2>
 
     <div class="zigzag-timeline-begin"></div>
 
-    {% for society in site.data.experience[page.lang] %}
+    {% for society in site.data.experience[page.lang].content %}
     <div class="zigzag-timeline__item py-3">
       <!-- Milestone -->
       <div class="zigzag-timeline__milestone"></div>
       <div class="text-center mx-auto col-lg-5 py-4">
         {% if society.logo_svg %}{% include {{ society.logo_svg }} %}{% endif %}
-        {% if society.logo_image %}<img src="{{ society.logo_image }}" style="width: 60%">{% endif %}
+        {% if society.logo_image %}<img src="{{ society.logo_image }}" style="width: {% if society.image_width %} {{ society.image_width }}{% else %}60%{% endif %}">{% endif %}
       </div>
       <!-- Content -->
       <div class="mx-3 pb-3">
@@ -20,7 +20,7 @@
             <h4 class="fw-bold col-lg-6 mb-1">{{ society.title }}</h4>
             <div class="col-lg-5">
               <div class="d-flex justify-content-lg-end">
-                <p class="text-muted mb-3"><i class="fas fa-map-marked-alt" aria-hidden="true"></i>  {{ society.location }}</p>
+                <p class="text-muted mb-3"><i class="fa fa-map-location-dot" aria-hidden="true"></i>  {{ society.location }}</p>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
             <p class="fw-bold col-lg-6 mb-1">{{ job.title }}</p>
             <div class="col-lg-5">
               <div class="d-flex justify-content-lg-end">
-                <p class="text-muted mb-3"><i class="far fa-clock" aria-hidden="true"></i> {{ job.period }}</span></p>
+                <p class="text-muted mb-3"><i class="fa fa-clock" aria-hidden="true"></i> {{ job.period }}</span></p>
               </div>
             </div>
           </div>

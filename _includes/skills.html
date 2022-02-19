@@ -1,8 +1,8 @@
 <section class="projects-section bg-light" id="skills">
-  <h2 class="tmb-4 text-center mb-4">Skills</h2>
+  <h2 class="tmb-4 text-center mb-4">{{ site.data.skills[page.lang].title }}</h2>
   <div class="container px-4 px-lg-5">
     <div class="row">
-      {% for items in site.data.skills[page.lang] %}
+      {% for items in site.data.skills[page.lang].columns %}
       <div class="col-lg">
         <h4 class="fw-bold text-center mt-3"> {{ items.title }} </h4>
         {% for item in items.items %}
